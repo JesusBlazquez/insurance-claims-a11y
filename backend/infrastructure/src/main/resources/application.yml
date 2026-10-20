@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: insurance-claims-a11y
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
