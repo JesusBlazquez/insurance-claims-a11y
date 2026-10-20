@@ -1,7 +1,8 @@
 version: 2
 updates:
+  # The Maven project lives under backend/, not at the repository root.
   - package-ecosystem: maven
-    directory: /
+    directory: /backend
     schedule:
       interval: weekly
     open-pull-requests-limit: 5
@@ -13,3 +14,9 @@ updates:
     directory: /
     schedule:
       interval: weekly
+
+  # The Angular application arrives in phase 3; npm updates start making sense then.
+  # - package-ecosystem: npm
+  #   directory: /frontend
+  #   schedule:
+  #     interval: weekly
